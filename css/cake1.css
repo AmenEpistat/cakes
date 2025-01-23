@@ -1,0 +1,61 @@
+.card{
+    display: grid;
+    
+    padding-right: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imgc titlec"
+                         "imgc pricec"
+                         "imgc textc";
+    padding-bottom: 50px;
+}
+.product-title{
+    grid-area: titlec;
+}
+.product-img{
+    grid-area: imgc;
+    align-self: center;
+    align-items: center;
+}
+.priceb{
+    grid-area: pricec;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.feat{
+    margin-right: auto;
+    align-items: center;
+    align-self: center;
+}
+.price{
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.description{
+    grid-area: textc
+}
+.to-and-for{
+    display:flex;
+    margin-top: 30px;
+    
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.previous, .next{
+    background-color: white;
+    border-radius: 50%;
+}
+.back{
+    padding-left: 30px;
+
+    background-image: url("../img/arrow_back.svg");
+    background-repeat: no-repeat;
+    color: #7B7F82;
+    text-decoration: none;
+}
+main{
+    padding-bottom: 50px;
+    padding-left: 50px;
+}

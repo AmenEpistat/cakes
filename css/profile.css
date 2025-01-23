@@ -1,0 +1,139 @@
+
+  /* Формы */
+  .center-50 {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #f8f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-signin {
+    display: flex;
+    flex-direction: column;
+  }
+  h2{
+    text-align: center;
+  }
+  .form-control {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    width: 380px;
+  }
+  
+  .form-control:focus {
+    border-color: #f50049;
+    outline: none;
+  }
+  
+  .btn {
+    background-color: #f50049;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color:#f50049;
+  }
+  /* Дополнительные стили */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    
+  }
+  
+  .mt-3 {
+    font-size: 14px;
+    margin-top: 1rem;
+    
+  }
+  .mt-3 a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: #f50049;
+  }
+  
+  .w-100 {
+    width: 100%;
+  }
+  .profile {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .profile input[type="text"],
+  .profile input[type="email"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    
+  }
+  
+  .profile input[type="submit"] {
+    padding: 10px;
+    background-color: #f50049;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .profile input[type="submit"]:hover {
+    background-color: #f50049;
+  }
+  
+  #logoutButton {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f50049;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  #logoutButton:hover {
+    background-color: #f50049;
+  }
+    

@@ -1,0 +1,463 @@
+body {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: #2d2829;
+    background-color: #fbebea;
+    margin:0;
+    
+  }
+  .page-header{
+    width: 1218px;
+    margin: 40px auto 0;
+    margin-left: 40px;
+
+  }
+  .site-navigation-item a {
+    font-size: 13px;
+    line-height: 16px;
+    color: #2d2829;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+  }
+  .logo {
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 100px;
+    
+  }
+  .main-nav{
+    display: flex;
+    align-self: center;
+    
+    
+  }
+  .site-navigation{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    margin: 0;
+    padding:0;
+  }
+  .main-nav a:hover {
+   
+    opacity: 0.5;
+  }
+  .site-navigation-item a.active {
+    color: #f50049;
+}
+  .site-navigation-item{
+    margin: 0 20px;
+    list-style-type: none;
+}
+.lk {
+  
+  margin-top: auto;
+  margin-right: 40px;
+  margin-bottom: auto;
+  
+
+  
+  color: #2d2829;
+  text-decoration: none;
+  
+}
+.cart__num {
+  position: absolute;
+  background-color: #f50049;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  
+  bottom: 25px;
+  right: -10px;
+}
+.basket{
+  background-color: #fbebea;
+  
+  border: 0;
+  border-radius: 0;
+  transition: 0.1s;
+  position:relative;
+  object-fit: contain; /* Фиксированное расположение */
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 30px;
+  margin-bottom: auto;
+  
+  color: #2d2829;
+  text-decoration: none;
+}
+  
+  
+  .promo h1 {
+    font-size: 90px;
+    line-height: 80px;
+    grid-area: promoh;
+    margin-top: 20px;
+    margin-bottom: auto;
+
+  }
+  .promo img{
+    margin-left: auto;
+    grid-area: promoimg;
+    
+   
+  }
+  .promo{
+    margin: 0 auto;
+    padding-left: 40px;
+    display:grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "promoh promoimg"
+                          "promob promoimg"
+                          "promol promoimg";
+
+    
+
+  }
+.promo p{
+  margin-bottom: 0;
+}
+  
+  .button {
+    grid-area: promob;
+    padding: 15px 50px;
+    margin-bottom: auto;
+   
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 13px ;
+    line-height: 27px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #f50049;
+  }
+  
+  .features {
+    /*border: 3px solid red;*/
+    font-size: 14px;
+    line-height: 18px;
+    grid-area: promol;
+   margin:0;
+   padding:0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .nature{
+    padding: 10px 70px;
+    padding-right: 20px;
+    background-image: url("../img/leaf.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
+
+  }
+  .delivery{
+    padding: 10px 70px;
+    padding-right: 20px;
+    background-image: url("../img/delivery.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  .catalog{
+    
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .card1{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 35px;
+    grid-template-areas: "t1 t2"
+                         "t1 t3";
+
+  }
+  .card1 li:nth-child(1){
+    grid-area: t1;
+
+  }
+  .card1 li:nth-child(2){
+    grid-area: t2;
+  }
+  .card1 li:nth-child(3){
+    grid-area: t3;
+  }
+
+  .catalog h2 {
+    
+    font-size: 40px;
+    line-height: 66px;
+    
+  }
+  .catalog-item{
+    position: relative;
+   
+  }
+  .catalog-item h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 24px;
+    line-height: 32px;
+    top: 10px; 
+    left: 20px; 
+    margin: 0; 
+  }
+  .catalog-item p {
+    position: absolute;
+    top: 60px;
+    left: 20px; 
+    margin: 0; 
+  }
+  
+  
+  .catalog-item a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #2d2829;
+    text-decoration: none;
+    position: absolute;
+    bottom: 35px;
+    right: 0px; 
+    margin: 0; 
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-position: 110px 8px;
+    padding-right: 70px;
+  }
+  .review{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+    grid-template-areas: "ph hh"
+                         "ph hhh"
+                         "ph hhhh";
+  }
+ 
+  .reviews h2 {
+    margin-top: 100px;
+    font-size: 40px;
+    line-height: 66px;
+    text-align: center;
+    
+  } 
+  .reviews h3 {
+    grid-area: hh; 
+    font-size: 27px;
+    line-height: 36px;
+    text-align:justify;
+    margin-bottom: 0;
+  }
+  .review img{
+    grid-area: ph;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: end;
+    margin-right: 65px;
+  }
+  .review-info {
+    grid-area: hhh;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .review .otz{
+    grid-area: hhhh;
+    margin-right: 250px;
+  }
+
+
+
+
+
+  
+  .advantages {
+    
+    padding-right: 50px;
+  }
+  .advantages img {
+    /* в файловой системе путь должен быть "../img/berries.png" */
+    background-image: url("img/berries.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 0;
+    margin-left: 0;
+  }
+.advantages-list{
+    align-self: center;
+    padding:0;
+    list-style: none;
+}
+  .advantages h2 {
+    margin-top: 100px;
+    font-size: 40px;
+    line-height: 66px;
+    text-align: center;
+  }
+  
+  .advantages-text {
+    font-style: italic;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .ad2{
+    display: flex;
+
+  }
+  
+  .advantages-list h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .advantages-list-item:nth-child(1){
+    background-image: url("../img/nat.svg");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    background-position:  0px 0;
+    background-size: 50px 50px;
+    
+}
+.advantages-list-item:nth-child(2){
+    background-image: url("../img/cake.svg");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    background-position:  0px 0;
+    background-size: 50px 50px;
+    
+}
+
+
+  
+  .contacts{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+  }
+.contact-item address {
+  font-style: normal;
+  
+ 
+  margin-left: 20px;}
+.contact-items{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+.contact-item{
+  display: flex;
+  
+}
+
+.contact-item a {
+
+  color: #2d2829;
+  text-decoration: none;
+  
+  margin-left: 20px;
+}
+.contact-item a:hover {
+  color: rgba(45, 40, 41, 0.7);
+
+  
+}
+
+.contact-item a:active {
+  color: rgba(45, 40, 41, 0.5);
+  
+}
+
+.social-list{
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+.social-item  a{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  
+}
+.social-item a:hover {
+  opacity: 0.7;
+ 
+}
+
+.social-item a:active {
+  opacity: 0.5;
+  
+}
+.contacts div{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.footer-navigation-item a {
+  font-size: 13px;
+  line-height: 16px;
+  color: #2d2829;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.copyright {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.boldd{
+font-weight: 700;
+}
+.main-footer {
+display: flex;
+justify-content: space-between;
+padding: 30px 50px ;
+background-color: #f1f1f1;
+align-items: center;
+color: #888888;
+background-color: #e8e8e8;
+
+}
+
+.footer-navigation{
+display: flex;
+justify-content: space-between;
+margin:0 40px;
+list-style-type: none;
+align-items: center;
+
+margin-right: auto;
+}
