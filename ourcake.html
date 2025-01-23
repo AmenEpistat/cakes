@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/ourcake.css" rel="stylesheet">
+    <title>Cakes. Торты на заказ</title>
+  </head>
+  <body>
+    
+    <header class="page-header">
+      <nav class="main-nav">
+        <p class="logo">
+          <img src="img/logo.svg" width="68" height="20" alt="Cakes">
+        </p>
+        <ul class="site-navigation">
+          <li class="site-navigation-item ">
+            <a href="index2.html">Главная</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="active" href="#">Наши торты</a>
+          </li>
+          
+          
+          <li class="site-navigation-item">
+            <a href="index2.html#about">О нас</a>
+          </li>
+          
+          <li class="site-navigation-item">
+            <a href="index2.html#con">Контакты</a>
+          </li>
+          
+        </ul>
+        <button class="basket" id="cart">
+          <img src="img/basket.svg" width="50" height="50">
+          <div class="cart__num" id="cart_num">0</div>
+        </button>
+        <a class="lk" href="lk.html"><img src="img/lk.svg" width="50" height="50"></a>
+      </nav>
+      
+    </header>
+    <main>
+    <section class="catalog">
+        
+        <div class="catalog-header">
+          <h2>Наши торты</h2>
+          <div class="search-container">
+            <input type="text" placeholder="Поиск по сайту.." class="search-input">
+            <button type="submit" class="search-button">Поиск</button>
+          </div>
+          <button type="button" class="filter-button"><img src="/img/filter.svg" class="filter-button-img" width="40" height="40" ></button>
+          
+          <div class="filter-container hidden">
+            <div class="filter_container">
+              <div class="div1">
+            <label for="category-filter">
+              Категория:
+            </label>
+            <select id="category-filter" >
+              <option value="all" >Все</option>
+              <option value="Классические">Классические</option>
+              <option value="Муссовые">Муссовые</option>
+              <option value="Чизкейки">Чизкейки</option>
+            </select></div>
+            
+            <label class="container_price">
+              Цена: <input type="number" id="price-min" placeholder="Минимум" min="0"> 
+              - <input type="number" id="price-max" placeholder="Максимум" min="0"> 
+            </label>
+            
+            <label class="container_price">
+              Вес: <input type="number" id="weight-min" placeholder="Минимум" min="0"> 
+              -<input type="number" id="weight-max" placeholder="Максимум" min="0"> 
+            </label>
+            
+            <div class="buttons">
+            <button class="reset">Сбросить все</button>
+            <button id="apply-filters">Применить</button>
+          </div>
+            <button class="filter-close"><img src="/img/close.svg" width="30" height="30"></button>
+            
+            </div>
+            </div>
+          
+          
+          
+        </div>
+        <p>Торты в наличии и под заказ. Оформите заказ на сайте, Наш оператор свяжется с Вами и проконсультирует по наличию, времени приготовления и доставки Вашего заказа</p>
+        <ul class="cakes-list">
+          <li class ="cakes-list-name">
+            <h3>Классические</h3>
+            
+            <li class="cakes-list-item" data-price="1530" data-weight="1000" data-category="Классические">
+              <img src="img/honey.webp" width="200" height="200" >
+              <h4>Медовый торт</h4>
+              <p class="description">Медовый торт состоит из тонких медовых коржей, пропитанных кремовой начинкой, состоящей из сметаны, натуральных сливок и маскарпоне, смешанной с сахаром и ванилью.<br><br> Вес 1000 гр</p>
+              <p class="price">1530 руб.</p>
+              <div class="links">
+              <button type="button" class="button-add button add-link">В корзину</button>
+              <a class="detail-link" href="cake1.html">Подробнее</a>
+              </div>
+            </li>
+              <li class="cakes-list-item" data-price="2210" data-weight="1200" data-category="Классические">
+                <img src="img/nap.webp" width="200" height="200">
+                <h4>Наполеон</h4>
+                <p class="description">Торт из хрупких коржей слоеного теста, пропитанных заварным кремом с добавлением цельного сгущенного молока.<br><br>Вес 1200 гр</p>
+                <p class="price">2210 руб.</p>
+                <div class="links">
+                <button type="button" class="button-add button add-link">В корзину</button>
+                <a class="detail-link" href="cake2.html">Подробнее</a>
+              </div>
+              </li>
+               <li class="cakes-list-item" data-price="2320" data-weight="1300" data-category="Классические">
+                  <img src="img/praga.webp" width="200" height="200">
+                  <h4>Прага</h4>
+                  <p class="description">Шоколадные бисквитные коржи со сливочно-шоколадным кремом и прослойкой из натурального абрикосового конфи. Полит ганашом на темном шоколаде.<br><br>Вес 1300 гр</p>
+                  <p class="price">2320 руб.</p>
+                  <div class="links">
+                  <button type="button" class="button-add button add-link">В корзину</button>
+                  <a class="detail-link" href="cake3.html">Подробнее</a>
+                </div>
+              </li>
+              
+          </li>
+          <li class ="cakes-list-name">
+            <h3>Муссовые</h3>
+          
+            <li class="cakes-list-item" data-price="2160" data-weight="1000" data-category="Муссовые">
+              <img src="img/tri.webp" width="200" height="200" >
+              <h4>Три шоколада</h4>
+              <p class="description">Воздушный муссовый торт на основе трёх видов бельгийского шоколада темного, молочного и белого) и натуральных сливок.
+                В основе с шоколадным коржем.<br><br>Вес 1000 гр</p>
+              <p class="price">2160 руб.</p>
+              <div class="links">
+                <button type="button" class="button-add button add-link">В корзину</button>
+              <a class="detail-link" href="cake4.html">Подробнее</a>
+            </div>
+            </li>
+            
+              <li class="cakes-list-item" data-price="3330" data-weight="1100" data-category="Муссовые">
+                <img src="img/tiram.webp" width="200" height="200" alt=Медовик>
+                <h4>Тирамису</h4>
+                <p class="description">Муссовый торт на основе сливочного сыра
+                  Маскарпоне с добавлением натуральных сливок и ванильной пасты со слоем печенья
+                  Савоярди, пропитанных кофе эспрессо.<br><br>Вес 1100 гр</p>
+                <p class="price">3330 руб.</p>
+                <div class="links">
+                  <button type="button" class="button-add button add-link">В корзину</button>
+                <a class="detail-link">Подробнее</a>
+              </div>
+              </li>
+              <li class="cakes-list-item" data-price="2280" data-weight="980" data-category="Муссовые">
+                <img src="img/limon.webp" width="200" height="200" alt=Медовик>
+                <h4>Лимонный мусовый</h4>
+                <p class="description">Легкий лимонный мусс на натуральных сливках с добавлением бельгийского белого шоколада, с прослойкой из лимонного курда на маковом бисквите.<br><br>Вес 980 гр</p>
+                <p class="price">2280 руб.</p>
+                <div class="links">
+                  <button type="button" class="button-add button add-link">В корзину</button>
+                <a class="detail-link">Подробнее</a>
+              </div>
+              </li>
+            
+          </li>
+          <li class ="cakes-list-name">
+          <h3>Чизкейки</h3>
+          
+            <li class="cakes-list-item" data-price="2390" data-weight="1200" data-category="Чизкейки">
+              <img src="img/classic.webp" width="200" height="200" alt=Медовик>
+              <h4>Чизкейк классический</h4>
+              <p class="description">Сырный слой из творожного сыра и натуральных сливок с добавлением ванильной пасты. На основе из песочного теста, украшенный лепестками миндаля.<br><br>Вес 1200 гр</p>
+              <p class="price">2390 руб.</p>
+              <div class="links">
+                <button type="button" class="button-add button add-link">В корзину</button>
+              <a class="detail-link">Подробнее</a>
+            </div>
+            </li>
+            
+              <li class="cakes-list-item" data-price="2160" data-weight="1000" data-category="Чизкейки">
+                <img src="img/chokolate.webp" width="200" height="200" alt=Медовик>
+                <h4>Чизкейк шоколадный</h4>
+                <p class="description">Сырный слой из творожного сыра и натуральных сливок с добавлением темного и молочного бельгийского шоколада, в основе со слоем из крошки песочного теста.
+                  Обсыпан шоколадной глазурью.<br><br>Вес 1000 гр</p>
+                <p class="price">2160 руб.</p>
+                <div class="links">
+                  <button type="button" class="button-add button add-link">В корзину</button>
+                <a class="detail-link">Подробнее</a>
+              </div>
+              </li>
+              <li class="cakes-list-item" data-price="3550" data-weight="1300" data-category="Чизкейки">
+                <img src="img/fishta.webp" width="200" height="200" alt=Медовик>
+                <h4>Чизкейк фисташковой</h4>
+                <p class="description">Сырный слой из творожного сыра и натуральных сливок с добавлением 100% фисташковой пасты, на основе из песочной крошки. Украшен дробленной фисташкой и сублимированной малиной.<br><br>Вес 1300 гр</p>
+                <p class="price">3550 руб.</p>
+                <div class="links">
+                  <button type="button" class="button-add button add-link">В корзину</button>
+                <a class="detail-link">Подробнее</a>
+              </div>
+              </li>
+            
+          </li>
+
+        </ul>
+        
+      </section>
+      <div class="popup hidden">
+        <div class="popup__container">
+        <h2 class="popup-title">Заказ</h2>
+        <div class="popup-empty">
+          <span class="empty">Ничего в корзине нет..</span>
+        </div>
+        <div class="popup-container hidden">
+          
+        </div>
+        <div class="popup-sum">
+          <span class="popup-sum-span">Сумма: </span>
+          <span class="popup-price">0</span>
+          <span class="popup-price-rub">руб.</span>
+        </div>
+        <div class="data-order">
+          <form id="order-form">
+            <input type="text" id="fio" placeholder="ФИО" required>
+            <input type="tel" id="phone" placeholder="Телефон" maxlength="20" required>
+            <input type="submit" id="btn-order" class="btn-order" disabled value="Оформить заказ">
+          </form>
+        </div>
+        
+        <button class="popup__close"><img src="/img/close.svg" width="30" height="30"> </button>
+      </div>
+
+      </div>
+      <div id="order-modal" class="modal hidden">
+        <div class="modal-content">
+          <p>Спасибо за заказ! Менеджер свяжется с вами.</p>
+          <button id="modal-close" class="btn-close">Закрыть</button>
+        </div>
+      </div>
+  
+    </main>
+      <footer class="main-footer">
+        <p class="logo">
+          <img src="img/logo.svg" width="68" height="20" alt="Cakes">
+        </p>
+        <ul class="footer-navigation">
+          <li class="footer-navigation-item">
+            <a href="#">Наши торты</a>
+          </li>
+          
+          <li class="footer-navigation-item">
+            <a href="index2.html#about">О нас</a>
+          </li>
+          
+          <li class="footer-navigation-item">
+            <a href="index2.html#con">Контакты</a>
+          </li>
+        </ul>
+        <p class="copyright">©  2024 Cakes</p>
+      </footer>
+      
+      <script src="/js/themes.js"></script>
+      <script src="/js/с.js"></script>
+      
+    </body>
+  </html>
+  

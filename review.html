@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+   
+    <link href="css/style.css" rel="stylesheet">
+    
+    <title>Cakes. Торты на заказ</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <p class="logo">
+          <img src="img/logo.svg" width="68" height="80" alt="Cakes">
+        </p>
+        <ul class="site-navigation">
+          <li class="site-navigation-item ">
+            <a class = "active" href="#">Главная</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="ourcake.html">Наши торты</a>
+          </li>
+          
+          <li class="site-navigation-item">
+            <a href="#about">Отзывы</a>
+          </li>
+          
+          <li class="site-navigation-item">
+            <a href="#about">О нас</a>
+          </li>
+        
+          <li class="site-navigation-item">
+            <a href="#con">Контакты</a>
+          </li>
+          
+        </ul>
+       
+        
+        <a class="lk" style="margin-left: auto" href="profile.html"><img src="img/lk.svg" width="50" height="50"></a>
+      </nav>
+      
+    </header>
+    <main class="page">
+        <section class="promo">
+            <div>
+                <h2>Отзывы клиентов о тортах Cakes!</h2>
+                <p>Дорогие друзья! Здесь Вы можете оставить свои отзывы о моей работе. Для меня это очень важно! Я вкладываю душу в каждый тортик и переживаю за результат! Очень хочется, чтобы он украсил Ваш праздник и принес в дом радость! Поэтому жду Ваших отзывов и фотографий!</p>
+                <a class="button" href="#submit-button">Оставить отзыв</a>
+            </div>
+            <img src="" width="" height="">
+            <ul class="review-list">
+                <li class="user-review">
+                    <h3 class="review-author">Алиса</h3>
+                    <p class="review-info">Врач, 34 года</p>
+                    <img class="review-img" >
+                    <p class="review-text">Торт нереально красивый, и вкусный! А что еще нужно детям на День рождения!</p>
+                    <button type="button" id="review-remove"><img src="img/close.svg" ></button>
+                </li>
+            </ul>
+            <div class="modal">
+              <div class="modal_container">
+                <form class="review-form" enctype="multipart/form-data">
+                <div class="review-inner">
+                  <label class="comment-label" for="comment-textarea">ваш комментарий</label>
+                  <textarea class="comment-field comment-area" rows="3" placeholder="Отзыв" required id="review-textarea"></textarea>
+                  <label class="input-file">
+                    <img id="preview" src="" width="80" height="80" alt="Превью изображения" />
+                    <input type="file" id="imageInput" accept="image/*" onchange="displayImage(this)"/>
+                    
+              </label>
+                </div>
+                <button class="button" id="submit-button" type="submit">Отправить</button>
+              </form>
+              <button class="filter-close"><img src="/img/close.svg" width="30" height="30"></button>
+
+              </div>
+              
+            </div>
+            
+        </section>
+
+
+
+
+
+
+    </main>
+    <footer class="main-footer">
+      <p class="logo">
+        <img src="img/logo.svg" width="68" height="20" alt="Cakes">
+      </p>
+      <ul class="footer-navigation">
+        <li class="footer-navigation-item">
+          <a href="ourcake.html">Наши торты</a>
+        </li>
+        
+        <li class="footer-navigation-item">
+          <a href="#about">О нас</a>
+        </li>
+        
+        <li class="footer-navigation-item">
+          <a href="#con">Контакты</a>
+        </li>
+      </ul>
+      <p class="copyright">©  2025 Cakes</p>
+    </footer>
+    <script>
+        function displayImage(inputElement) {
+    const file = inputElement.files[0];
+    const imageURL = URL.createObjectURL(file);
+    document.getElementById('preview').src = imageURL;
+    inputElement.value = null;
+    document.getElementById('preview').onload = () => URL.revokeObjectURL(imageURL);
+}
+    </script>
+    
+   
+  </body>
+</html>
